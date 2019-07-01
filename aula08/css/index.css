@@ -1,0 +1,223 @@
+/* -- Regras Gerais Início -- */
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  font-size: 18px;
+}
+/* -- Regras Gerais Fim -- */
+
+/* Área Header Início */
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 #676767;
+}
+
+header .logo-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .logo-content img {
+  width: 10%;
+}
+
+header .container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+header .container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .container ul li {
+  list-style: none;
+}
+
+header .container ul .toggle-menu {
+  display: none;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container ul li a:hover {
+  text-decoration: underline;
+  color: #5f4a98;
+}
+/* Área Header Fim */
+
+/* Área Home Início */
+.home-content {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-content .image-banner {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  background-position: center;
+  color: #fff;
+}
+
+.home-content .image-banner h1 {
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.home-content .image-banner p {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.home-content .image-banner button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 35px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 7%;
+  margin-top: 2%;
+  background-color: #fff;
+}
+/* Àrea Home Fim */
+
+/* Área Produtos Início */
+.products-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+.products-content div {
+  margin: 1%;
+  height: 250px;
+  width: 375px;
+}
+
+.products-content div img {
+  height: 100%;
+}
+
+.products-content div button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-left: 30%;
+  position: relative;
+  bottom: 25%;
+}
+/* Área Produtos Fim */
+
+/* Àrea Footer Início */
+footer {
+  width: 100%;
+  background-color: #5f4a98;
+  color: #fff;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Área Footer Fim */
+
+/* -- Media Queries Area Begin -- */
+@media only screen and (max-width: 540px){
+  
+  body {
+    width: 100vw;
+  }
+
+  header {
+    z-index: 2;
+    height: 10vh;
+  }
+  
+  header .container {
+    width: 50%;
+  }
+  
+  header .container ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+  
+  header .container ul li {
+    display: none;
+  }
+  
+  header .container ul .toggle-menu {
+    display: block;
+    font-size: 1.3em;
+  }
+  
+  header .logo-content {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  header .logo-content img {
+    width: 20%;
+  }
+  
+  .home-content .image-banner {
+    width: 100vw;
+  }
+
+  .home-content .image-banner p {
+    text-align: center;
+  }
+
+  .products-content {
+    width: 100vw;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+/* -- Media Queries Area End -- */
+
+.home-content .image-banner button:hover,
+.product-content div button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #5f4a98;
+}
