@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form action="" method="GET">
+
+        <label for="">Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <br>
+
+        <label for="">Senha</label>
+        <input type="password" name="senha" placeholder="Digite sua senha" required>
+        <br>
+
+        <label for="">E-mail</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        <br>
+        
+        <label for="">Pratica quais esportes?</label>
+        Futebol <input type="checkbox" name="esporte">
+        Basquete <input type="checkbox" name="esporte">
+        Vôlei <input type="checkbox" name="esporte">
+        <br>
+
+        <label for="">Gênero</label>
+        Masculino <input type="radio" name="genero">
+        Feminino <input type="radio" name="genero">
+        Outros <input type="radio" name="genero">
+        <br>
+
+        Mensagem <textarea name="mensagem" id="" cols="30" rows="10" 
+        placeholder="Digite sua mensagem"></textarea>
+        <br>
+
+        Nacionalidade<select name="nacionalidade" id="">
+            <option value="BR">Brasil</option>
+            <option value="ARG">Argentina</option>
+        </select>
+
+        <select name="nacionalidade" id="">
+            <optgroup label="Sul América">
+                <option value="BR">Brasil</option>
+                <option value="ARG">Argentina</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <br>
+        
+        <button type="reset">Limpar</button>
+
+    </form>
+</body>
+</html>
