@@ -1,0 +1,26 @@
+hr {
+    background-color: yellow;
+    height: 5px;
+  }
+  
+  p {
+    color: green;
+  }
+  
+  ul li{
+    background-color: red;
+    color: yellow;
+  }
+  
+  ol li {
+    background-color: purple;
+    color: white;
+  }
+  
+  h4 p {
+    color: pink;
+  }
+  
+  #paragrafo-vermelho{
+    color: red;
+  }
