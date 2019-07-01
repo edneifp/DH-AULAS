@@ -1,0 +1,125 @@
+/* HEADER */
+header {
+    height: 150px;
+    position:  relative;
+}
+
+nav {
+    width: 1340px;
+    margin-top: 70px;
+    background-color: #FFB90F;
+}
+
+#logo {
+    height: 200px;
+    position: absolute;
+    top: -65px;
+}
+
+#menu ul {
+    display: inline-block;
+    list-style: none;
+    margin-left: 160px;
+    height: 60px;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 15px 0 0 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.form {
+    display: inline-block;
+    margin-left: 400px;
+}
+
+/* CONTAINER */
+#container {
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+section .product {
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
+    float: left;
+    margin: 0 0 20px 20px;
+    opacity: 1;
+    /* Aplica uma transição mais suave */
+    transition: opacity 0.8s ease-in-out;
+}
+
+section .product-1 {
+    background-image: url("../imagens/product-1.jpg");
+}
+
+section .product-2 {
+    background-image: url("../imagens/product-2.jpg");
+}
+
+section .product-3 {
+    background-image: url("../imagens/product-3.jpg");
+}
+
+section .img-label {
+    width: 70px;
+    position: absolute;
+    margin-left: 226px;
+    margin-top: 5px;
+}
+
+section .botao {
+    background-color: #FF4500;
+    margin: 220px 0 0 100px;
+    color: white;
+    width: 90px;
+    height: 40px;
+}
+
+section .name-product {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 128px;  
+    position: absolute;
+    background-color: #101010;
+    height: 35px;
+    width: 300px;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #FFB90F;
+    width: 1340px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* PSEUDO-SELETORES */
+section .product:hover {
+    opacity: 0.5;
+}
+
+.input-form:focus { 
+    border-color: blue;
+}
+
+#menu ul li a:active {
+    color: black;
+}
