@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+/* Altera o tamanho da barra de rolagem início */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+}
+/* Altera o tamanho da barra de rolagem fim */
+
+/* Altera a cor e a borda da barra de rolagem início */
+::-webkit-scrollbar-thumb {
+    border: 1px solid #f1f1f1;
+    background: #343a40;
+}
+/* Altera a cor e a borda da barra de rolagem fim */
+
+/* Altera a cor de fundo da barra de rolagem início */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Altera a cor de fundo da barra de rolagem fim */
+
+/* Altera a cor da barra de rolagem quando o mouse é passado sobre o elemento início */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Altera a cor da barra de rolagem quando o mouse é passado sobre o elemento fim */
+
+/* Header Início */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.5;
+}
+
+header nav .logo {
+    width: 50px;
+    height: 50px;
+}
+
+header nav span {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    padding: 10px;
+    list-style: none;
+    margin-left: 80px;
+}
+
+header nav ul li a { 
+    color: #fff;
+    font-size: 1.2em;
+}
+
+header a:hover {
+    color: #fff;
+}
+/* Header Fim */
+
+/* Section Home Início */
+section.home-content {
+    background-image: url("../img/bg-header.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+section.home-content h1, p, a {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+section.home-content h1 {
+    font-size: 4em;
+}
+
+section.home-content p {
+    font-size: 1.5em;
+}
+
+section.home-content a {
+    font-size: 1.2em;
+    background-color: #343a40;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+section.home-content a:hover{
+    color: #fff;
+}
+/* Section Home Fim */
+
+/* Section Services Início */
+section.services {
+    height: 60vh;
+    display: flex;
+    background-color: #8c654c;
+}
+
+section.services h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 1px;
+}
+
+section.services p {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+article.icons {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+article.icons i {
+    background-color: #fff;
+    color: #8c654c;
+    border-radius: 50%;
+    font-size: 4em;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+/* Section Services Fim */
